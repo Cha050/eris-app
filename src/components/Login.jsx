@@ -39,11 +39,12 @@ export default function Login({ setAuth }) {
       {loading ? (
         <Launcher setLoading={setLoading} />
       ) : (
-        <div className="min-h-screen flex flex-col items-center justify-center bg-[#e7e9ef]">
+        <div className="flex h-screen w-screen justify-center">
+        <div className="min-h-screen flex flex-col items-center justify-center bg-white">
           <div className="mb-8">
             <img src={logo} alt="Barangay Logo" className="rounded-full w-32 h-32" />
           </div>
-          <div className="bg-white dark:bg-zinc-800 p-8 rounded-lg shadow-lg w-full max-w-md">
+          <div className="bg-white dark:bg-zinc-800 p-10 rounded-lg w-full max-w-md">
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
                 <label className="block text-zinc-700 dark:text-zinc-300 text-sm font-bold mb-2" htmlFor="email">
@@ -128,7 +129,7 @@ export default function Login({ setAuth }) {
               </div>
             </form>
           </div>
-        </div>
+        </div></div>
       )}
     </>
   );

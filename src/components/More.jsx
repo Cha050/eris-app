@@ -8,11 +8,6 @@ const More = () => {
     navigate(-1);
   };
 
-  const handleLogout = () => {
-    // Implement your logout logic here
-    console.log('User logged out');
-  };
-
   const navigateToPage = (page) => {
     navigate(`/more/${page}`);
   };
@@ -57,14 +52,6 @@ const More = () => {
             </li>
           </ul>
         </div>
-      </div>
-      <div className="fixed bottom-4 right-4">
-        <button
-          onClick={handleLogout}
-          className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-700 text-sm"
-        >
-          Log out
-        </button>
       </div>
     </div>
   );

@@ -7,8 +7,15 @@ import News from './components/News';
 import Notification from './components/Notification';
 import History from './components/History';
 import More from './components/More';
-import Profile from './components/Profile'; // Import the Profile component
+import Profile from './components/Profile';
 import Header from './components/Header';
+import PersonalDetails from './components/PersonalDetails';
+import PasswordSecurity from './components/PasswordSecurity';
+import HelpSupport from './components/HelpSupport';
+import PrivacyPolicy from './components/PrivacyPolicy';
+import Map from './components/Map';
+import EmergencyReportForm from './components/EmergencyReportForm';
+import Direction from './components/Direction'; 
 
 const App = () => {
   const [isAuthenticated, setAuth] = useState(false);
@@ -54,6 +61,13 @@ const App = () => {
             <Route path="/map" element={isAuthenticated ? <Map /> : <Navigate to="/" />} />
             <Route path="/header" element={isAuthenticated ? <Header /> : <Navigate to="/" />} />
             <Route path="/profile" element={isAuthenticated ? <Profile /> : <Navigate to="/" />} />
+            <Route path="/more/personal-details" element={<PersonalDetails />} />
+            <Route path="/more/password-security" element={<PasswordSecurity />} />
+            <Route path="/more/help-support" element={<HelpSupport />} />
+            <Route path="/more/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/map" element={<Map />} />
+            <Route path="/report/:type" element={<EmergencyReportForm />} />
+            <Route path="/direction/:type" element={<Direction />} />
           </Routes>
         </div>
       )}

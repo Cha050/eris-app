@@ -33,12 +33,12 @@ const History = () => {
       </div>
       <div className="container mx-auto p-4 mt-16">
         <div className="bg-white p-4 rounded-lg shadow">
-          <h2 className="text-xl font-bold mb-2">Emergency Call History</h2>
+          <div className="text-xl font-bold mb-2 border-b-2 border-black">Emergency Call History</div>
           {/* Display history entries */}
           <ul className="divide-y divide-gray-200">
             {historyData.map((entry, index) => (
               <li key={index} className="py-2">
-                <div className="flex justify-between">
+                <div className="flex justify-between border-b border-black">
                   <div>
                     <p className="text-m font-semibold">{entry.date}</p>
                     <p className="text-gray-500">Type: {entry.emergencyType}</p>

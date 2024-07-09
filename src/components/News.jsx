@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import Home from './Home'; // Import the Home component
+import Home from './Home'; 
 import medical from '../assets/medical.jpg';
 import fiesta from '../assets/fiesta.jpg';
 import attention from '../assets/attention.jpg';
 import zumba from '../assets/zumba.jpg';
+import feedinggg from '../assets/feedinggg.mp4';
 
 const News = () => {
   const [newsItems, setNewsItems] = useState([]);
@@ -23,13 +24,13 @@ const News = () => {
           summary: "#BagtasMagkaisa2023",
           imageUrl: medical
         },
-        // {
-        //   id: 4, // ID for the video post
-        //   title: "Nutri-Bus Feeding Program",
-        //   caption: "Nutri-Bus Feeding Program sa Paaralang Elementarya ng Bagtas, handog ni Senator Imee Marvos, Gov. Jonvic Remulla, Mayor Yuri Pacumio, Vice Mayor SM Matro at mga kasama.",
-        //   summary: "#BagtasMagkaisa #Video",
-        //   videoUrl: feedinggg // Video URL
-        // },
+         {
+          id: 4, // ID for the video post
+          title: "Nutri-Bus Feeding Program",
+          caption: "Nutri-Bus Feeding Program sa Paaralang Elementarya ng Bagtas, handog ni Senator Imee Marcos, Gov. Jonvic Remulla, Mayor Yuri Pacumio, Vice Mayor SM Matro at mga kasama.",
+          summary: "#BagtasMagkaisa #Video",
+           videoUrl: feedinggg // Video URL
+        },
         {
           id: 2,
           title: "Health and Wellness Fair",
